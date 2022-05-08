@@ -20,13 +20,16 @@ body a {
   color: white;
   list-style: none; }
 
+body hr {
+  color: white; }
+
 /* Pagina INDEX*/
 .bodyindex {
   background-image: url(../Fotos/Renaultauto.jpg); }
   .bodyindex .gridindex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40px 540px 15px;
+    grid-template-rows: 50px 540px 15px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "TN Nav Nav" "Main Main Main" "footer footer footer"; }
@@ -174,3 +177,60 @@ body a {
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px; }
+
+/* Pagina STN*/
+.fomulariostn {
+  background-image: url(../Fotos/megane.jpg);
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr 1.1fr;
+  grid-template-rows: 0.5fr 3.5fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "navbar3 navbar3 navbar3" "formulario formulario informacionstn" "footerstn footerstn footerstn"; }
+  .fomulariostn .navbar3 {
+    grid-area: navbar3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-color: white;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    font-family: 'Secular One', sans-serif;
+    height: 50px; }
+    .fomulariostn .navbar3 .li__stn {
+      display: inline-block;
+      list-style: none;
+      margin-right: 5px;
+      color: white; }
+      .fomulariostn .navbar3 .li__stn:hover {
+        transform: scale(1.2);
+        border: solid white; }
+  .fomulariostn .formulario {
+    grid-area: formulario;
+    margin-top: 0.5%;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold; }
+    .fomulariostn .formulario label {
+      margin-right: 30%; }
+  .fomulariostn .informacionstn {
+    background-color: rgba(0, 128, 0, 0.3);
+    background-size: 100%;
+    margin: 0% 1%;
+    grid-area: informacionstn;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    text-align: center; }
+    .fomulariostn .informacionstn .ComentarioSTN {
+      margin-top: 3%; }
+  .fomulariostn .footerstn {
+    grid-area: footerstn;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+    border-top: solid 1px white; }
