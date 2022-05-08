@@ -1,0 +1,23 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    list-style: none;
+}
+body {
+    background-image: url(../Fotos/Renaultauto.jpg);
+    h1{
+        font-family: 'Permanent Marker', cursive;
+        color: white;
+        font-size: 2.5rem;
+    }
+    h2{
+        color: white;
+        font-family: 'Merienda', cursive;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        list-style : none;
+    }
+}
