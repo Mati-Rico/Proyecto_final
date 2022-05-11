@@ -257,6 +257,19 @@
         }
     }
     .informacionstn { 
+        background-color: rgba($color: green, $alpha: 0.5);
+        background-size: 100%;
+        margin: 0% 1%;
+        grid-area: informacionstn;
+        font-size: 2rem;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+        .ComentarioSTN{
+            margin-top: 3%;
+        }
+    }
+    .informacionstn2{
         background-color: rgba($color: green, $alpha: 0.3);
         background-size: 100%;
         margin: 0% 1%;

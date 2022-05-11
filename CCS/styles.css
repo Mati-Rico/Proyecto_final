@@ -217,7 +217,7 @@ body hr {
     .fomulariostn .formulario label {
       margin-right: 30%; }
   .fomulariostn .informacionstn {
-    background-color: rgba(0, 128, 0, 0.3);
+    background-color: rgba(0, 128, 0, 0.5);
     background-size: 100%;
     margin: 0% 1%;
     grid-area: informacionstn;
@@ -226,6 +226,17 @@ body hr {
     font-weight: bolder;
     text-align: center; }
     .fomulariostn .informacionstn .ComentarioSTN {
+      margin-top: 3%; }
+  .fomulariostn .informacionstn2 {
+    background-color: rgba(0, 128, 0, 0.3);
+    background-size: 100%;
+    margin: 0% 1%;
+    grid-area: informacionstn;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    text-align: center; }
+    .fomulariostn .informacionstn2 .ComentarioSTN {
       margin-top: 3%; }
   .fomulariostn .footerstn {
     grid-area: footerstn;
