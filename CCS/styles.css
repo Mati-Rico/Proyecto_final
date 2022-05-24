@@ -215,7 +215,7 @@ body hr {
     font-size: 1.5rem;
     font-weight: bold; }
     .fomulariostn .formulario label {
-      margin-right: 30%; }
+      margin-right: 35%; }
   .fomulariostn .informacionstn {
     background-color: rgba(0, 128, 0, 0.5);
     background-size: 100%;
@@ -238,6 +238,17 @@ body hr {
     text-align: center; }
     .fomulariostn .informacionstn2 .ComentarioSTN {
       margin-top: 3%; }
+  .fomulariostn .informacionstn3 {
+    background-color: rgba(0, 128, 0, 0.2);
+    background-size: 100%;
+    margin: 0% 1%;
+    grid-area: informacionstn;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    text-align: center; }
+    .fomulariostn .informacionstn3 .ComentarioSTN {
+      margin-top: 3%; }
   .fomulariostn .footerstn {
     grid-area: footerstn;
     color: white;
@@ -245,3 +256,80 @@ body hr {
     font-weight: bold;
     text-align: right;
     border-top: solid 1px white; }
+
+/* PAGINA CONTACTO*/
+.contacto {
+  background-image: url(../Fotos/ws_Dark_Brick_Pattern_Abstract_1366x768.jpg);
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2.5fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "navbar5 navbar5 navbar5" "mainContacto mainContacto mainContacto" "footerContacto footerContacto footerContacto"; }
+  .contacto .navbar5 {
+    grid-area: navbar5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-color: white;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    font-family: 'Secular One', sans-serif;
+    height: 50px; }
+    .contacto .navbar5 .li__contacto {
+      display: inline-block;
+      list-style: none;
+      margin-right: 5px;
+      color: white; }
+      .contacto .navbar5 .li__contacto:hover {
+        transform: scale(1.2);
+        border: solid white; }
+  .contacto .mainContacto {
+    grid-area: mainContacto;
+    font-size: 1.5rem;
+    font-weight: bold; }
+    .contacto .mainContacto .comentarioContacto {
+      color: white;
+      font-size: 1.7rem;
+      margin-bottom: 4rem; }
+    .contacto .mainContacto .form__contacto {
+      color: white;
+      font-size: 1.7rem;
+      padding-right: 10%;
+      padding-left: 10%;
+      text-align: right; }
+      .contacto .mainContacto .form__contacto .Contacto_Formulario {
+        color: white;
+        margin-top: 10%; }
+      .contacto .mainContacto .form__contacto .Contacto_Botones {
+        color: white;
+        margin-top: 5%;
+        margin-right: 35%;
+        margin-left: 10%; }
+      .contacto .mainContacto .form__contacto .comentarioFinal {
+        margin-right: 35%;
+        margin-top: 5%; }
+        .contacto .mainContacto .form__contacto .comentarioFinal .Contacto_BotonesG {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 15%; }
+      .contacto .mainContacto .form__contacto .BotonEnviar {
+        margin-top: 2%;
+        margin-right: 3%;
+        margin-bottom: 3%;
+        color: white;
+        background-color: gray; }
+      .contacto .mainContacto .form__contacto .BotonLimpiarFormulario {
+        margin-right: 35%;
+        color: white;
+        background-color: gray; }
+  .contacto .footerContacto {
+    grid-area: footerContacto;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+    border-top: solid 1px white;
+    margin-top: 5rem; }

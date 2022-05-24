@@ -253,7 +253,7 @@
         font-size: 1.5rem;
         font-weight: bold;
         label {
-            margin-right: 30%;
+            margin-right: 35%;
         }
     }
     .informacionstn { 
@@ -282,6 +282,19 @@
             margin-top: 3%;
         }
     }
+    .informacionstn3{
+        background-color: rgba($color: green, $alpha: 0.2);
+        background-size: 100%;
+        margin: 0% 1%;
+        grid-area: informacionstn;
+        font-size: 2rem;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+        .ComentarioSTN{
+            margin-top: 3%;
+        }
+    }
     .footerstn { 
         grid-area: footerstn;
         color: white;
@@ -291,3 +304,99 @@
         border-top: solid 1px white;
     }
 }
+
+/* PAGINA CONTACTO*/
+
+.contacto {
+background-image: url(../Fotos/ws_Dark_Brick_Pattern_Abstract_1366x768.jpg);
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2.5fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "navbar5 navbar5 navbar5"
+    "mainContacto mainContacto mainContacto"
+    "footerContacto footerContacto footerContacto";
+    .navbar5 { 
+        grid-area: navbar5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid;
+        border-color: white;
+        font-size: 1.7rem;
+        font-weight: bolder;
+        font-family: 'Secular One', sans-serif;
+        height: 50px;
+        .li__contacto {
+            display: inline-block;
+            list-style: none;
+            margin-right: 5px;
+            color: white;
+            &:hover {
+                transform: scale(1.2);
+                border: solid white;
+            }
+        }
+    }
+    .mainContacto { 
+        grid-area: mainContacto;
+        font-size: 1.5rem;
+        font-weight: bold;
+        .comentarioContacto {
+            color: white;
+            font-size: 1.7rem;
+            margin-bottom: 4rem;
+        }
+        .form__contacto {
+            color: white;
+            font-size: 1.7rem;
+            padding-right: 10%;
+            padding-left: 10%;
+            text-align: right;
+            .Contacto_Formulario{
+                color: white;
+                margin-top: 10%;
+            }
+            .Contacto_Botones{
+                color: white;
+                margin-top: 5%;
+                margin-right: 35%;
+                margin-left: 10%;
+            }
+            .comentarioFinal{
+                margin-right: 35%;
+                margin-top: 5%;
+                .Contacto_BotonesG{
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 15%;
+                }
+            }
+            .BotonEnviar{
+                margin-top: 2%;
+                margin-right: 3%;
+                margin-bottom: 3%;
+                color: white;
+                background-color: gray;
+            }
+            .BotonLimpiarFormulario{
+                margin-right: 35%;
+                color: white;
+                background-color: gray;
+            }
+        }
+    }
+    .footerContacto { 
+        grid-area: footerContacto;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: right;
+        border-top: solid 1px white; 
+        margin-top: 5rem;
+    }
+}
+
