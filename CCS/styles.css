@@ -185,7 +185,7 @@ body hr {
   background-size: 100%;
   display: grid;
   grid-template-columns: 1fr 0.9fr 1.1fr;
-  grid-template-rows: 0.5fr 3.5fr 0.3fr;
+  grid-template-rows: 0.3fr 4fr 0.07fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "navbar3 navbar3 navbar3" "formulario formulario informacionstn" "footerstn footerstn footerstn"; }
@@ -210,13 +210,24 @@ body hr {
         border: solid white; }
   .fomulariostn .formulario {
     grid-area: formulario;
-    margin-top: 0.5%;
-    align-items: center;
     color: white;
-    font-size: 1.5rem;
-    font-weight: bold; }
-    .fomulariostn .formulario label {
-      margin-right: 35%; }
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-right: 10%;
+    text-align: right;
+    font-family: 'Indie Flower', cursive; }
+    .fomulariostn .formulario .textarea__stn {
+      margin-left: 20%;
+      width: 290px; }
+    .fomulariostn .formulario .contacto__stn {
+      margin-left: 5%;
+      margin-top: 2%; }
+    .fomulariostn .formulario .descripciones__stn .textarea__stnG, .fomulariostn .formulario .descripciones__stn1 .textarea__stnG, .fomulariostn .formulario .descripciones__stn2 .textarea__stnG, .fomulariostn .formulario .descripciones__stn3 .textarea__stnG {
+      margin-left: 20%;
+      width: 290px;
+      margin-top: 2%;
+      display: inline-block;
+      vertical-align: middle; }
   .fomulariostn .informacionstn {
     background-color: rgba(0, 128, 0, 0.5);
     background-size: 100%;
@@ -225,7 +236,8 @@ body hr {
     font-size: 2rem;
     color: white;
     font-weight: bolder;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Indie Flower', cursive; }
     .fomulariostn .informacionstn .ComentarioSTN {
       margin-top: 3%; }
   .fomulariostn .informacionstn2 {
@@ -235,6 +247,7 @@ body hr {
     grid-area: informacionstn;
     font-size: 2rem;
     color: white;
+    font-family: 'Indie Flower', cursive;
     font-weight: bolder;
     text-align: center; }
     .fomulariostn .informacionstn2 .ComentarioSTN {
@@ -246,6 +259,7 @@ body hr {
     grid-area: informacionstn;
     font-size: 2rem;
     color: white;
+    font-family: 'Indie Flower', cursive;
     font-weight: bolder;
     text-align: center; }
     .fomulariostn .informacionstn3 .ComentarioSTN {
