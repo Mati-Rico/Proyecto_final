@@ -245,7 +245,8 @@
             }
         }
     }
-    .formulario { 
+    .formulario {
+        margin-top: 2%; 
         grid-area: formulario;
         color: white;
         font-size: 2rem;
@@ -279,11 +280,35 @@
         .descripciones__stn3{
             @extend .descripciones__stn
         }
+        #adjuntar{
+            justify-items: right;
+            margin-top: 2%;
+            margin-left: 69%;
+        }
+        .botones{
+            margin-right: 7%;
+            margin-bottom: 2%;
+            .Boton__Enviar{
+                color: rgb(4, 4, 53);
+                font-weight: bolder;
+                border: 0;
+                font-size: 12px;
+                outline: none;
+                padding: 5px 10px;
+                background: rgb(234, 227, 226);
+                border-radius: 4px;
+                text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+                box-shadow: 0 4px 0 #3f3d3d, 0 3px 20px rgba(23, 22, 22, 0.3);
+            }
+            .Boton__LimpiarFormulario{
+                @extend .Boton__Enviar
+            }
+        }
     }
     .informacionstn { 
         background-color: rgba($color: green, $alpha: 0.5);
         background-size: 100%;
-        margin: 0% 1%;
+        margin: 6% 1%;
         grid-area: informacionstn;
         font-size: 2rem;
         color: white;
@@ -291,36 +316,20 @@
         text-align: center;
         font-family: 'Indie Flower', cursive;
         .ComentarioSTN{
-            margin-top: 3%;
+            margin-top: 5%;
         }
     }
     .informacionstn2{
         background-color: rgba($color: green, $alpha: 0.3);
         background-size: 100%;
-        margin: 0% 1%;
+        margin: 6% 1%;
         grid-area: informacionstn;
         font-size: 2rem;
         color: white;
         font-family: 'Indie Flower', cursive;
         font-weight: bolder;
         text-align: center;
-        .ComentarioSTN{
-            margin-top: 3%;
-        }
     }
-    .informacionstn3{
-        background-color: rgba($color: green, $alpha: 0.2);
-        background-size: 100%;
-        margin: 0% 1%;
-        grid-area: informacionstn;
-        font-size: 2rem;
-        color: white;
-        font-family: 'Indie Flower', cursive;
-        font-weight: bolder;
-        text-align: center;
-        .ComentarioSTN{
-            margin-top: 3%;
-        }
     }
     .footerstn { 
         grid-area: footerstn;
@@ -330,7 +339,7 @@
         text-align: right;
         border-top: solid 1px white;
     }
-}
+
 
 /* PAGINA CONTACTO*/
 

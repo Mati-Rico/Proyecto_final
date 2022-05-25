@@ -209,6 +209,7 @@ body hr {
         transform: scale(1.2);
         border: solid white; }
   .fomulariostn .formulario {
+    margin-top: 2%;
     grid-area: formulario;
     color: white;
     font-size: 2rem;
@@ -228,10 +229,28 @@ body hr {
       margin-top: 2%;
       display: inline-block;
       vertical-align: middle; }
+    .fomulariostn .formulario #adjuntar {
+      justify-items: right;
+      margin-top: 2%;
+      margin-left: 69%; }
+    .fomulariostn .formulario .botones {
+      margin-right: 7%;
+      margin-bottom: 2%; }
+      .fomulariostn .formulario .botones .Boton__Enviar, .fomulariostn .formulario .botones .Boton__LimpiarFormulario {
+        color: #040435;
+        font-weight: bolder;
+        border: 0;
+        font-size: 12px;
+        outline: none;
+        padding: 5px 10px;
+        background: #eae3e2;
+        border-radius: 4px;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 0 #3f3d3d, 0 3px 20px rgba(23, 22, 22, 0.3); }
   .fomulariostn .informacionstn {
     background-color: rgba(0, 128, 0, 0.5);
     background-size: 100%;
-    margin: 0% 1%;
+    margin: 6% 1%;
     grid-area: informacionstn;
     font-size: 2rem;
     color: white;
@@ -239,38 +258,25 @@ body hr {
     text-align: center;
     font-family: 'Indie Flower', cursive; }
     .fomulariostn .informacionstn .ComentarioSTN {
-      margin-top: 3%; }
+      margin-top: 5%; }
   .fomulariostn .informacionstn2 {
     background-color: rgba(0, 128, 0, 0.3);
     background-size: 100%;
-    margin: 0% 1%;
+    margin: 6% 1%;
     grid-area: informacionstn;
     font-size: 2rem;
     color: white;
     font-family: 'Indie Flower', cursive;
     font-weight: bolder;
     text-align: center; }
-    .fomulariostn .informacionstn2 .ComentarioSTN {
-      margin-top: 3%; }
-  .fomulariostn .informacionstn3 {
-    background-color: rgba(0, 128, 0, 0.2);
-    background-size: 100%;
-    margin: 0% 1%;
-    grid-area: informacionstn;
-    font-size: 2rem;
-    color: white;
-    font-family: 'Indie Flower', cursive;
-    font-weight: bolder;
-    text-align: center; }
-    .fomulariostn .informacionstn3 .ComentarioSTN {
-      margin-top: 3%; }
-  .fomulariostn .footerstn {
-    grid-area: footerstn;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: right;
-    border-top: solid 1px white; }
+
+.footerstn {
+  grid-area: footerstn;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  border-top: solid 1px white; }
 
 /* PAGINA CONTACTO*/
 .contacto {
