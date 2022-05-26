@@ -4,6 +4,7 @@
 
 .bodyindex {
     background-image: url(../Fotos/Renaultauto.jpg);
+    background-size: cover;
     .gridindex{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -40,7 +41,7 @@
                     border: solid white;
                 }
             }
-            }
+        }
         .Main { 
             grid-area: Main;
             .inicio__Parrafo{
@@ -65,6 +66,80 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .bodyindex {
+        background-image: url(../Fotos/Renaultauto.jpg);
+        .gridindex {
+            display: grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: 0.08fr 0.9fr 3fr 0.02fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "TN"
+            "Nav"
+            "Main"
+            "footer";
+            .TN{
+                grid-area: TN; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-family: 'Permanent Marker', cursive;
+                margin: 1%;
+            }
+            .Nav { 
+                grid-area: Nav; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.7rem;
+                font-weight: bolder;
+                font-family: 'Secular One', sans-serif;
+                margin-top: 2%;
+                .navegador__li {
+                    display: inline-block;
+                    list-style: none;
+                    margin-right: 5px;
+                    color: blue;
+                    &:hover {
+                        transform: scale(1.2);
+                        border: solid white;
+                    }
+                }
+            }
+            .Main { 
+                grid-area: Main;
+                .inicio__Parrafo{
+                    margin-top: 3%;
+                    margin-bottom: 13%;
+                    font-size: 3rem;
+                    color: white;
+                    font-family: 'Merienda', cursive;
+                    text-align: center;
+                }
+                .inicio__Saludo{
+                    font-size: 5rem;
+                    margin-top: 8%;
+                    text-align: center;
+                } 
+            }
+            .footer {
+                grid-area: footer;
+                color: white;
+                font-family: 'Secular One', sans-serif;
+                font-size: 1.5rem;
+                text-align: center;
+                justify-items: center;
+                height: 1rem;
+                font-family: 'Merienda', cursive;
+            }
+        }
+    }
+}
+
 /* CSS PAGINA NOSOTROS*/
 .bodynosotros{
     background-image: url(../Fotos/Renaultmadera.jpg);
@@ -76,12 +151,13 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "iniciotn iniciotn iniciotn"
+        "iniciotnh1 iniciotn iniciotn"
         "ftn ftn ftn"
         "maintn maintn maintn"
         "footertn footertn footertn";
     }
     .iniciotnh1{
+        grid-area: iniciotnh1;
         font-size: 2.5rem;
         color: white;
         font-family: 'Permanent Marker', cursive;
@@ -209,13 +285,66 @@
 }
 }
 
+@media screen and (max-width: 768px) {
+    .bodynosotros{
+        background-image: url(../Fotos/Renaultmadera.jpg);
+        background-size: 100%;
+        .nosotrosgrid {  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.035fr 0.035fr 0.45fr 1.5fr 0.07fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "iniciotnh1"
+                "iniciotn"
+                "ftn"
+                "maintn"
+                "footertn";
+            }
+            .iniciotnh1{
+                grid-area: iniciotnh1; 
+                font-size: 2.5rem;
+                color: white;
+                font-family: 'Permanent Marker', cursive;
+            }
+            .iniciotn {
+                grid-area: iniciotn; 
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid;
+                border-color: white;
+                font-size: 1.7rem;
+                font-weight: bolder;
+                font-family: 'Secular One', sans-serif;
+                height: 50px;
+                .li_nosotros {
+                    display: inline-block;
+                    list-style: none;
+                    margin-right: 5px;
+                    color: white;
+                    &:hover {
+                        transform: scale(1.2);
+                        border: solid white;
+                    }
+                }
+            }
+            .ftn { 
+                grid-area: ftn;
+                margin: 0%;
+                padding: 0%;
+            }
+        }
+}
+
 /* Pagina STN*/
 
 .fomulariostn {  
     background-image: url(../Fotos/megane.jpg);
     background-size: 100%;
     display: grid;
-    grid-template-columns: 1fr 0.9fr 1.1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 4fr 0.07fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -339,7 +468,33 @@
         text-align: right;
         border-top: solid 1px white;
     }
-
+    @media screen and (max-width: 768px) {
+        .fomulariostn {  
+        background-image: url(../Fotos/megane.jpg);
+        background-size: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1.5fr 1.5fr 0.07fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "navbar3"
+        "informacionstn"
+        "formulario"
+        "footerstn"; 
+        .formulario{
+            text-align: center;
+            #adjuntar{
+                margin-top: 4%;
+                justify-items: left;
+                margin-right: 5px;
+            }
+            .botones{
+                margin-left: 20%;
+            }
+        }
+    }
+}
 /* PAGINA OBRAS*/
 
 .obras {  
@@ -376,7 +531,13 @@
         }
     }
     .mainObras{
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 2.7rem;
         grid-area: mainObras;
+        .titulo__galeria{
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 3rem;
+        }
         .galeria__obras{
             text-align: center;
             margin-bottom: 1.5%;
@@ -502,7 +663,20 @@
         border-top: solid 1px white;
     }
 }
-
+@media screen and (max-width: 768px) {
+    .obras{
+        background-image: url(../Fotos/ws_Dark_Brick_Pattern_Abstract_1366x768.jpg);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.08fr 2fr 0.02fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "navObras"
+        "mainObras"
+        "footerObras";
+    }
+}
 
 /* PAGINA CONTACTO*/
 
@@ -619,6 +793,125 @@
         border-top: solid 1px white; 
         margin-top: 3%;
         font-family: 'Merienda', cursive;
+    }
+}
+@media screen and (max-width: 1021px) {
+    .contacto {
+        background-image: url(../Fotos/ladrillosypiso.jpg);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 4fr 0.07fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "navbar5 "
+        "mainContacto"
+        "footerContacto";
+        .navbar5 { 
+            grid-area: navbar5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid;
+            border-color: white;
+            font-size: 1.7rem;
+            font-weight: bolder;
+            font-family: 'Secular One', sans-serif;
+            height: 50px;
+            .li__contacto {
+                display: inline-block;
+                list-style: none;
+                margin-right: 5px;
+                color: white;
+                &:hover {
+                    transform: scale(1.2);
+                    border: solid white;
+                }
+            }
+        }
+        .mainContacto { 
+            grid-area: mainContacto;
+            font-size: 1.5rem;
+            font-weight: bold;
+            .tituloContacto{
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            .comentarioContacto {
+                color: white;
+                font-size: 1.7rem;
+                margin-bottom: 2rem;
+                text-align: center;
+                font-family: 'Merienda', cursive;
+            }
+            .form__contacto {
+                color: white;
+                font-family: 'Merienda', cursive;
+                font-size: 1.8rem;
+                padding-right: 10%;
+                padding-left: 10%;
+                text-align: center;
+                justify-content: center;
+                .Contacto_Formulario{
+                    color: white;
+                    margin-top: 10%;
+                    text-align: center;
+                }
+                .Contacto_Botones{
+                    color: white;
+                    margin-top: 5%;
+                    margin-right: 35%;
+                    margin-left: 10%;
+                }
+                .comentarioFinal{
+                    margin-right: 35%;
+                    margin-top: 5%;
+                    .Contacto_BotonesG{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-left: 15%;
+                    }
+                }
+                .BotonEnviar{
+                    margin-top: 4%;
+                    margin-right: 3%;
+                    margin-bottom: 3%;
+                    color: rgb(4, 4, 53);
+                    font-weight: bolder;
+                    border: 0;
+                    font-size: 12px;
+                    outline: none;
+                    padding: 5px 10px;
+                    background: rgb(238, 135, 112);
+                    border-radius: 4px;
+                    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+                    box-shadow: 0 4px 0 #c93706, 0 3px 20px rgba(23, 22, 22, 0.3);
+                }
+                .BotonLimpiarFormulario{
+                    margin-right: 33.5%;
+                    color: rgb(4, 4, 53);
+                    font-weight: bolder;
+                    border: 0;
+                    font-size: 12px;
+                    outline: none;
+                    padding: 5px 10px;
+                    background: rgb(238, 135, 112);
+                    border-radius: 4px;
+                    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+                    box-shadow: 0 4px 0 #c93706, 0 3px 20px rgba(23, 22, 22, 0.3);
+                }
+            }
+        }
+        .footerContacto { 
+            grid-area: footerContacto;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: right;
+            border-top: solid 1px white; 
+            margin-top: 3%;
+            font-family: 'Merienda', cursive;
+        }
     }
 }
 
