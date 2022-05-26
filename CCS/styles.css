@@ -139,36 +139,36 @@ body hr {
 /* CSS PAGINA NOSOTROS*/
 .bodynosotros {
   background-image: url(../Fotos/Renaultmadera.jpg);
-  background-size: 100%; }
-  .bodynosotros .nosotrosgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.07fr 0.45fr 1.5fr 0.07fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "iniciotnh1 iniciotn iniciotn" "ftn ftn ftn" "maintn maintn maintn" "footertn footertn footertn"; }
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.07fr 0.45fr 1.5fr 0.07fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "iniciotnh1 in in" "ftn ftn ftn" "maintn maintn maintn" "footertn footertn footertn"; }
   .bodynosotros .iniciotnh1 {
     grid-area: iniciotnh1;
     font-size: 2.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
     color: white;
     font-family: 'Permanent Marker', cursive; }
-  .bodynosotros .iniciotn {
-    grid-area: iniciotn;
+  .bodynosotros .in {
+    grid-area: in;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
-    border-bottom: 1px solid;
-    border-color: white;
     font-size: 1.7rem;
     font-weight: bolder;
     font-family: 'Secular One', sans-serif;
     height: 50px; }
-    .bodynosotros .iniciotn .li_nosotros {
+    .bodynosotros .in .li_nosotros {
       display: inline-block;
       list-style: none;
       margin-right: 5px;
       color: white; }
-      .bodynosotros .iniciotn .li_nosotros:hover {
+      .bodynosotros .in .li_nosotros:hover {
         transform: scale(1.2);
         border: solid white; }
   .bodynosotros .ftn {
@@ -206,12 +206,6 @@ body hr {
       margin-left: 80px;
       margin-top: 30px;
       border-radius: 20px; }
-  .bodynosotros .footern {
-    grid-area: footertn;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: right; }
   .bodynosotros #FuncionTN {
     border: 0.25rem;
     border-radius: 5px;
@@ -239,40 +233,38 @@ body hr {
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px; }
+  .bodynosotros .footern {
+    grid-area: footertn;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right; }
 
 @media screen and (max-width: 768px) {
   .bodynosotros {
     background-image: url(../Fotos/Renaultmadera.jpg);
-    background-size: 100%; }
-    .bodynosotros .nosotrosgrid {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.035fr 0.035fr 0.45fr 1.5fr 0.07fr;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      grid-template-areas: "iniciotnh1" "iniciotn" "ftn" "maintn" "footertn"; }
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.035fr 0.035fr 0.45fr 1.5fr 0.07fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "iniciotnh1" "in" "ftn" "maintn" "footertn"; }
     .bodynosotros .iniciotnh1 {
-      grid-area: iniciotnh1;
-      font-size: 2.5rem;
-      color: white;
-      font-family: 'Permanent Marker', cursive; }
-    .bodynosotros .iniciotn {
-      grid-area: iniciotn;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid;
-      border-color: white;
+      justify-content: center; }
+    .bodynosotros .in {
+      grid-area: in;
+      display: flex;
+      justify-content: center;
       font-size: 1.7rem;
-      font-weight: bolder;
-      font-family: 'Secular One', sans-serif;
       height: 50px; }
-      .bodynosotros .iniciotn .li_nosotros {
+      .bodynosotros .in .li_nosotros {
         display: inline-block;
         list-style: none;
         margin-right: 5px;
         color: white; }
-        .bodynosotros .iniciotn .li_nosotros:hover {
+        .bodynosotros .in .li_nosotros:hover {
           transform: scale(1.2);
           border: solid white; }
     .bodynosotros .ftn {
@@ -406,14 +398,19 @@ body hr {
   grid-template-rows: 0.08fr 2fr 0.02fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "navObras navObras navObras" "mainObras mainObras mainObras" "footerObras footerObras footerObras"; }
+  grid-template-areas: "TN2 navObras navObras" "mainObras mainObras mainObras" "footerObras footerObras footerObras"; }
+  .obras .TN2 {
+    grid-area: TN2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    font-family: 'Permanent Marker', cursive; }
   .obras .navObras {
     grid-area: navObras;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
-    border-bottom: 1px solid;
-    border-color: white;
     font-size: 1.7rem;
     font-weight: bolder;
     font-family: 'Secular One', sans-serif;
@@ -545,10 +542,121 @@ body hr {
     background-image: url(../Fotos/ws_Dark_Brick_Pattern_Abstract_1366x768.jpg);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.08fr 2fr 0.02fr;
+    grid-template-rows: 0.2fr 0.2fr 3.1fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "navObras" "mainObras" "footerObras"; } }
+    grid-template-areas: "TN2" "navObras" "mainObras" "footerObras"; }
+    .obras .TN2 {
+      display: flex;
+      justify-content: center; }
+    .obras .navObras {
+      display: flex;
+      justify-content: center;
+      font-size: 1.7rem;
+      font-weight: bolder;
+      font-family: 'Secular One', sans-serif;
+      height: 50px; }
+    .obras .mainObras .titulo__galeria {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 1.5rem; }
+    .obras .mainObras .galeria__obras {
+      text-align: center;
+      margin-bottom: 1.5%; }
+    .obras .mainObras .EstructuraGaleria {
+      margin: 0% 1% 1% 1%;
+      border-radius: 2px;
+      border-style: dashed;
+      border-color: white; }
+      .obras .mainObras .EstructuraGaleria .fotos_cta {
+        margin-top: 0.3%;
+        margin-bottom: 1%;
+        height: 200px;
+        width: 250px;
+        margin-right: 15px;
+        margin-left: 35px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: white; }
+      .obras .mainObras .EstructuraGaleria .piedeFoto {
+        color: white;
+        text-align: center;
+        margin-top: 1%; }
+    .obras .mainObras .EstructuraGaleria2 {
+      margin: 1% 1% 0% 1%;
+      border-radius: 2px;
+      border-style: dashed;
+      border-color: white; }
+      .obras .mainObras .EstructuraGaleria2 .cuadrosGas {
+        margin-top: 0.3%;
+        margin-bottom: 1%;
+        height: 200px;
+        width: 250px;
+        margin-right: 15px;
+        margin-left: 35px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: white; }
+      .obras .mainObras .EstructuraGaleria2 .piedeFoto {
+        color: white;
+        text-align: center;
+        margin-top: 1%; }
+    .obras .mainObras .EstructuraGaleria3 {
+      margin: 1% 1% 0% 1%;
+      border-radius: 2px;
+      border-style: dashed;
+      border-color: white; }
+      .obras .mainObras .EstructuraGaleria3 .tablerosElectricos {
+        margin-top: 0.3%;
+        margin-bottom: 1%;
+        height: 200px;
+        width: 250px;
+        margin-right: 15px;
+        margin-left: 35px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: white; }
+      .obras .mainObras .EstructuraGaleria3 .piedeFoto {
+        color: white;
+        text-align: center;
+        margin-top: 1%; }
+    .obras .mainObras .EstructuraGaleria4 {
+      margin: 1% 1% 0% 1%;
+      border-radius: 2px;
+      border-style: dashed;
+      border-color: white; }
+      .obras .mainObras .EstructuraGaleria4 .cableadoCatenaria {
+        margin-top: 0.3%;
+        margin-bottom: 1%;
+        height: 200px;
+        width: 400px;
+        margin-right: 15px;
+        margin-left: 35px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: white; }
+      .obras .mainObras .EstructuraGaleria4 .piedeFoto {
+        color: white;
+        text-align: center;
+        margin-top: 1%; }
+    .obras .mainObras .EstructuraGaleria5 {
+      margin: 1% 1% 0% 1%;
+      border-radius: 2px;
+      border-style: dashed;
+      border-color: white; }
+      .obras .mainObras .EstructuraGaleria5 .cañeriaCatenaria {
+        margin-top: 0.3%;
+        margin-bottom: 1%;
+        height: 200px;
+        width: 250px;
+        margin-right: 15px;
+        margin-left: 35px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: white; }
+      .obras .mainObras .EstructuraGaleria5 .piedeFoto {
+        color: white;
+        text-align: center;
+        margin-top: 1%; } }
 
 /* PAGINA CONTACTO*/
 .contacto {
@@ -558,14 +666,19 @@ body hr {
   grid-template-rows: 0.5fr 4fr 0.07fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "navbar5 navbar5 navbar5" "mainContacto mainContacto mainContacto" "footerContacto footerContacto footerContacto"; }
+  grid-template-areas: "iniciotn navbar5 navbar5" "mainContacto mainContacto mainContacto" "footerContacto footerContacto footerContacto"; }
+  .contacto .iniciotn {
+    grid-area: iniciotn;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    font-family: 'Permanent Marker', cursive; }
   .contacto .navbar5 {
     grid-area: navbar5;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
-    border-bottom: 1px solid;
-    border-color: white;
     font-size: 1.7rem;
     font-weight: bolder;
     font-family: 'Secular One', sans-serif;
@@ -654,17 +767,17 @@ body hr {
     background-image: url(../Fotos/ladrillosypiso.jpg);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 4fr 0.07fr;
+    grid-template-rows: 0.2fr 0.2fr 3.1fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "navbar5 " "mainContacto" "footerContacto"; }
+    grid-template-areas: "iniciotn" "navbar5 " "mainContacto" "footerContacto"; }
+    .contacto .iniciotn {
+      display: flex;
+      justify-content: center; }
     .contacto .navbar5 {
       grid-area: navbar5;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid;
-      border-color: white;
+      justify-content: center;
       font-size: 1.7rem;
       font-weight: bolder;
       font-family: 'Secular One', sans-serif;
@@ -688,6 +801,8 @@ body hr {
         color: white;
         font-size: 1.7rem;
         margin-bottom: 2rem;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
         text-align: center;
         font-family: 'Merienda', cursive; }
       .contacto .mainContacto .form__contacto {
@@ -703,10 +818,13 @@ body hr {
           margin-top: 10%;
           text-align: center; }
         .contacto .mainContacto .form__contacto .Contacto_Botones {
+          width: 100px;
           color: white;
           margin-top: 5%;
-          margin-right: 35%;
-          margin-left: 10%; }
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
         .contacto .mainContacto .form__contacto .comentarioFinal {
           margin-right: 35%;
           margin-top: 5%; }
